@@ -1,0 +1,27 @@
+student:
+  age: 18
+  name: 张元安
+  date: 1998/9/25
+  books: [{name: 语文,price: 50,author: 语文老师},{name: 数学,price: 60,author: 数学老师},{name: 英语,price: 70,author: 英语老师}]
+
+  book:
+      name: 语文
+      price: 50
+      author: 语文老师
+  project: [语文,数学,英语]
+  set: [{name: set,price: 666, author: set老师}]
+  listBooks:
+    Chinese:
+      - {name: 语文,price: 66,author: 语文老师}
+      - {name: 数学,price: 77,author: 数学老师}
+    English:
+      - name: 英语
+        price: 88
+        author: 英语老师
+#spring:
+#  mvc:
+#    不能配置静态资源访问前缀，否则会导致欢迎页失效
+#    static-path-pattern: /res/**
+#  web:
+#    resources:
+#      static-locations: classpath:/picture/
