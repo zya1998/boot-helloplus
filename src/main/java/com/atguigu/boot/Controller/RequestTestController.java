@@ -17,6 +17,7 @@ public class RequestTestController {
     public String stu01(HttpServletRequest request){
         request.setAttribute("msg1","请求转发1");
         request.setAttribute("msg2","请求转发2");
+        request.setAttribute("msg2","请求转发3");
         return "forward:/stu02";
     }
 
