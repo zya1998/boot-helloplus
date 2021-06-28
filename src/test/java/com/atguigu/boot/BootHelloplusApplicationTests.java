@@ -1,7 +1,7 @@
 package com.atguigu.boot;
 
-import com.alibaba.druid.pool.DruidDataSource;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.sql.DataSource;
@@ -12,7 +12,11 @@ import java.util.Properties;
 
 @SpringBootTest
 class BootHelloplusApplicationTests {
-
-
+    @Autowired
+    DataSource dataSource;
+    @Test
+    public void test1(){
+        System.out.println(dataSource.getClass());
+    }
 
 }

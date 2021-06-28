@@ -17,7 +17,6 @@ public class MyWebMvcConfig implements WebMvcConfigurer{
         configurer.setUrlPathHelper(urlPathHelper);
         urlPathHelper.setRemoveSemicolonContent(false);
     }
-
     /**
      * Configure content negotiation options.
      *
